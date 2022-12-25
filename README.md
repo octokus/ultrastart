@@ -1,5 +1,5 @@
 # ultrastart
-Website startpage for browser. 
+Startpage website in PHP for browser. 
 
 Add and modify links by editing linklist.json
 
