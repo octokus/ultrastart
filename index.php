@@ -23,7 +23,6 @@ echo '<link rel="stylesheet" type="text/css" href="s.css?reload=1" />';
 echo '
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
-console.log("joo");
 $(window).resize(function() {
 	// This will execute whenever the window is resized
 	//const el = document.querySelector(".startlinks");
