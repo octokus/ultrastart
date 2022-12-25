@@ -12,9 +12,9 @@ function get_json($file="settings.json"){
 $linklist = get_json("linklist.json");
 $q = $_GET["q"];
 if($q){
-		if(substr($q, 0, 8)!="https://") $q = "https://".$q;
-		header("refresh:$s;url=$q");
-		exit();
+	if(substr($q, 0, 8)!="https://") $q = "https://".$q;
+	header("refresh:$s;url=$q");
+	exit();
 }
 echo "<!DOCTYPE html>
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml' dir='ltr'><head>
