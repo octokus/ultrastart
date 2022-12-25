@@ -51,7 +51,7 @@ $(window).resize(function() {
 */
 </script>';
 echo '
-<title>UltraSartpage</title></head><body>';
+<title>UltraStartpage</title></head><body>';
 function search_form($title=true,$action="https://duckduckgo.com/",$n="Search DuckDuckGo",$sn="Search",$focus=0){
 	echo "<div class='search_block'>";
 	echo "<form action='$action' method='get' class='search_form' name='search_form'>";
