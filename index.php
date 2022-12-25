@@ -1,4 +1,7 @@
 <?php
+$show_calendar = true;
+$show_moon = true;
+
 function get_timestamp(){
 		$date = new DateTime();
 		return (int)$date->getTimestamp();
@@ -78,9 +81,9 @@ foreach(array_keys($linklist) as $l){
 	echo "</span>";
 }
 echo "</div></div>";
-echo '<!-- // Begin Current Moon Phase HTML (c) MoonConnection.com // --><table class="moon_calendar" cellpadding="0" cellspacing="0" border="0" width="212"><tr><td align="center"><a href="https://www.moonconnection.com" target="mc_moon_ph"><img src="https://www.moonmodule.com/cs/dm/hn.gif" width="212" height="136" border="0" alt="" /></a></td></tr></table><!-- // end moon phase HTML // -->';
-#$day = date ("Y-M-d", $a));
-$show_calendar = true;
+if($show_moon){
+	echo '<!-- // Begin Current Moon Phase HTML (c) MoonConnection.com // --><table class="moon_calendar" cellpadding="0" cellspacing="0" border="0" width="212"><tr><td align="center"><a href="https://www.moonconnection.com" target="mc_moon_ph"><img src="https://www.moonmodule.com/cs/dm/hn.gif" width="212" height="136" border="0" alt="" /></a></td></tr></table><!-- // end moon phase HTML // -->';
+}
 if($show_calendar){
 	$calendar = get_json("calendar.json");
 	function cal_num($a,$calendar,$current=false){
