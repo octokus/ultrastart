@@ -1,0 +1,150 @@
+  /**{ border: 2px dotted red;}*/
+body{font-family: 20px 'Helvetica Neue',Helvetica,Arial, sans-serif;background-color:#121212;color:#dddddd;min-width:600px;margin:auto;}
+.content{margin-top:20px;min-width:700px;margin-left:auto;margin-right:auto;padding-left:10px;padding-right:10px;margin-bottom:20px;padding-bottom:30px;max-width:1030px;padding-top:0px;}
+.startlinks{max-width:900px;margin-left:auto;margin-right:auto;}
+.super_link_container{width:130px;height:130px;margin-left:5px;margin-right:5px;}
+.name_box{border-radius:15px;background:#222222;padding:4px;font-weight:900;color:white;position:absolute;margin-left:-135px;width:100px; margin-top:100px;padding-left:15px;opacity:0;}
+.name_box:hover{border-radius:15px;background:#222222;padding:4px;font-weight:900;color:white;position:absolute;margin-left:-135px;width:100px; margin-top:100px;padding-left:15px;opacity:0.7;
+            text-shadow: -1px  1px 0 #000,
+                          1px  1px 0 #000,
+                          1px -1px 0 #000,
+                         -1px -1px 0 #000;
+}
+img{transition: all 0.2s;opacity:0.9;margin:6px;margin-bottom:10px;border:3px solid #454545;border-radius:15px;}
+img:hover{transition: all 0.3s;opacity:1;border-color: #eeeeee;}
+.searchbar{border-radius:5px;border:3px solid #111111;margin:10px;padding:10px;width:580px;height:40px;font-size:20px;}
+.search_button{border-radius:5px;height:40px;width:100px;font-size:20px; background-color: #333333;color:white;border:3px solid #444444;}
+.search_button:hover{height:40px;width:100px;font-size:20px; background-color: #111111;color:white;}
+input[type=search]{ box-sizing: border-box; background-color: #333333;color:white;border:0px;}
+.search_block{margin-left:0px;margin-right:auto;display:block;width:720px;margin-bottom:0px;margin-top:0px;}
+.moon_calendar{position:absolute;top:0px;right:0px;}
+
+
+
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  /*background: url("https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=183f2924ba5a8429441804609b2d4f61") no-repeat center / cover;*/
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    filter: blur(10px);
+  }
+}
+
+.calendar {
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  min-width: 230px;
+  width: 230px;
+  margin-right:5px;
+  background-color: #999999;
+  box-sizing: border-box;
+  box-shadow: 0 5px 50px rgba(#000, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar__picture {
+  position: relative;
+
+  /*height: 200px;*/
+  padding-left: 10px;
+  color: #fff;
+  /*background: #262626 url("https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=183f2924ba5a8429441804609b2d4f61") no-repeat center / cover;*/
+  background-color:#999999;
+  text-shadow: 0 2px 2px rgba(#000, 0.2);
+  box-sizing: border-box;
+  
+  &::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
+  }
+}
+
+.calendar__date {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 5px;
+  box-sizing: border-box;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.calendar_number {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: #262626;
+}
+.calendar_number_happening {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: #962626;
+}
+.calendar_number:hover {
+  background-color: #773366;
+  color: #ffffff;
+  cursor: pointer;
+}
+.calendar_number_happening:hover {
+  background-color: #773366;
+  color: #ffffff;
+  cursor: pointer;
+}
+.calendar_number_current{
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+    background-color: #773333;
+}
+.calendar_number_current_happening{
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+    background-color: #962626;
+}
+.calendar_number_current:hover{
+  background-color: #773366;
+  color: #ffffff;
+  cursor: pointer;
+}
+.calendar_number_current_happening:hover{
+  background-color: #773366;
+  color: #ffffff;
+  cursor: pointer;
+}
