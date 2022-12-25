@@ -3,7 +3,7 @@ Website startpage for browser.
 
 Add and modify links by editing linklist.json
 
-Link-images in img/ can be used. Image name to be put in linklist.json
-dummy_s.jpg is used when no imagename specified or not found.
+Link images in img/ can be used. Image name to be put in linklist.json.
+when no image name specified or not found dummy_s.jpg is used .
 
 Calendar can hold notifications. Edit calendar.json to add new notifications.
