@@ -3,8 +3,8 @@ $show_calendar = true;
 $show_moon = true;
 
 function get_timestamp(){
-		$date = new DateTime();
-		return (int)$date->getTimestamp();
+	$date = new DateTime();
+	eturn (int)$date->getTimestamp();
 }
 function get_json($file="settings.json"){
 	return json_decode(file_get_contents($file), true);
