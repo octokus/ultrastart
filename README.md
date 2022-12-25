@@ -1,2 +1,2 @@
 # ultrastart
-PHP startpage for browser. 
+Website startpage for browser. 
