@@ -9,3 +9,5 @@ When no image name specified or file not found, img/dummy_s.jpg is used.
 Calendar can hold notifications. Edit calendar.json to add/modify new notifications.
 
 Widgets can be turned on/off in index.php.
+
+code: Pauli Varonen, email; pauli.varonen @ gmail.com
